@@ -1,13 +1,8 @@
-// problem: 01
 
 function multiplyValue(value: number, multiplier?: number): number {
     return value * (multiplier || 1);
 }
-// console.log(multiplyValue(0));
-// console.log(multiplyValue(10, 5)); 
-// console.log(multiplyValue(7, 0)); 
 
-// problem: 02
 
 function processInput(value: string | number | boolean): string | number {
     if (typeof value === "string") {
@@ -21,14 +16,8 @@ function processInput(value: string | number | boolean): string | number {
     }
 }
 
-// console.log(processInput("  TypeScript  "));
-// console.log(processInput(7));
-// console.log(processInput(true));
-// console.log(processInput(false));
-
 export {};
 
-// problem: 03
 
 function formatCoordinate(
     coordinate: readonly [number, number, string]
@@ -38,24 +27,18 @@ function formatCoordinate(
     return `Location: ${locationName} (${latitude}, ${longitude})`;
 }
 
-// console.log(formatCoordinate([23.81, 90.41, "Dhaka"]));
-// console.log(formatCoordinate([22.35, 91.78, "Chittagong"]));
 
 export {};
 
-// problem: 04
+
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.flat();
 }
 
-// console.log(concatenateArrays(["a", "b"], ["c", "d"]));
-// 
-// console.log(concatenateArrays([1, 2], [3, 4], [5]));
 
 export {};
 
-// problem: 05
 
 interface Course {
     title: string;
@@ -98,13 +81,9 @@ const courses: Course[] = [
     }
 ];
 
-// console.log(getPopularCourses(courses, 80));
 
 export {};
 
-// problem: 06
-
-// problem: 07
 
 class Employee {
     protected name: string;
@@ -135,12 +114,9 @@ class Manager extends Employee {
 
 const manager = new Manager("Alice", 50000, "Engineering");
 
-// console.log(manager.getDetails());
-// console.log(manager.RoleInfo);
 
 export {};
 
-// problem: 08
 
 function validateAgeAsync(age: number): Promise<string> {
     return new Promise((resolve, reject) => {
